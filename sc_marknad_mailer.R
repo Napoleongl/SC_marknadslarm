@@ -24,9 +24,9 @@ main <- function(sender, recipient, gm_config){
       gm_subject("Nya grejor till salu!") %>% 
       gm_html_body(findings_table) %>% 
       gm_send_message()
-    write(paste("Mail sent with", new_ad_count ,"new ads."), "")
+    write(paste0(Sys.time(),": Mail sent with ", new_ad_count ," new ads."), "")
   } else {
-    write("No new findings!", "")
+    write(paste0(Sys.time(),": No new findings!"), "")
   }
 }
 
