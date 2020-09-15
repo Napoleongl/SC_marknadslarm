@@ -2,7 +2,7 @@ market_findings <- function(){
   suppressPackageStartupMessages(require("rvest"))
   suppressPackageStartupMessages(require("tidyverse"))
   suppressPackageStartupMessages(require("xtable"))
-  last_check <- Sys.Date() - 1
+  last_check <- Sys.Date() - 2
   try(load("sc_marknad_checkpoint.Rdata"),silent = TRUE)
   
   time_format    <- "%a, %d %b %Y %H:%M:%S"
