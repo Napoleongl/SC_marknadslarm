@@ -12,3 +12,5 @@ B570
 B470
 skärm
 wii
+switch
+nintendo
